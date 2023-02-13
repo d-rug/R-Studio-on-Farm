@@ -1,10 +1,10 @@
 ---
-title: YOUR WORKSHOP TITLE
-author: [YOUR NAME]
+title: R-Studio on Farm
+author: Reed Kenny
 date: "`r Sys.Date()`"
 
-github-repo: d-rug/YOUR_REPO
-url: "https://d-rug.github.io/YOUR_REPO/"
+github-repo: d-rug/R-Studio-on-Farm
+url: "https://d-rug.github.io/R-Studio-on-Farm/"
 
 site: "bookdown::bookdown_site"
 knit: "bookdown::render_book"
@@ -29,4 +29,8 @@ output:
 
 # Overview {-}
 
-YOUR DESCRIPTION, LEARNING GOALS, PREREQUISITES, ETC
+This mini workshop is meant to enable someone who has a farm account at UC Davis to open an R-Studio interface that is running on farm using RStudio server. 
+
+LEARNING GOALS: Become familiar with ssh protocols, opening an interactive session on farm using slurm commands, and using the r studio server module. 
+
+PREREQUISITES: An account on farm that you are able to connect to via ssh. For help acquiring an account see https://wiki.cse.ucdavis.edu/cgi-bin/index2.pl. Free farm accounts are available to CAES affiliates or through P.I.'s that have purchased resources on farm. 
