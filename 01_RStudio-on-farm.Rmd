@@ -97,7 +97,7 @@ module load rstudio-server/2022.12.0
 
 ```
 
-and run the `rserver-lanuch` program
+and run the `rstudoio-lanuch` program
 
 ```{Slurm}
 
@@ -107,11 +107,14 @@ rstudio-launch
 
 This will print out two things: a complicated looking command starting with `ssh`, and a Web site URL that starts with localhost. You’ll need both of these!
 
-If you get an error with this command you can try loading the older version (this was recently updated)
+If you get an error with this command you can try loading the older version (this was recently updated) and runnign the `rserver-farm` program.
 
 ```{Slurm}
 
 module load rstudio-server/2022.07.1
+
+rserver-farm
+
 
 ```
 
