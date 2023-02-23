@@ -6,3 +6,4 @@ ssh
 allocate-a-computer
 load-and-run-rstudio-server
 start-ssh-tunneling
+a-couple-things-to-get-folks-going

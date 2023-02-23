@@ -129,7 +129,7 @@ You should end up at an RStudio login page, where you can enter the username and
 
 ### A couple things to get folks going:
 
-You can use the scp command in your local computer's terminal window to copy files to the remote system - read more about that [here](https://ngs-docs.github.io/2021-august-remote-computing/connecting-to-remote-computers-with-ssh.html#copying-files-to-and-from-your-local-computer.)
+You can use the `scp` command in your local computer's terminal window to copy files to the remote system - read more about that [here](https://ngs-docs.github.io/2021-august-remote-computing/connecting-to-remote-computers-with-ssh.html#copying-files-to-and-from-your-local-computer.)
 
-You can also clone a github repository using the git clone command in the terminal, or by opening a new R studio project and selecting the version control option. If you want to use the ssh option, you will need to generate a new ssh key on your farm account by running `ssh-keygen`. 
+You can also clone a **github repository** using the git clone command in the terminal, or by opening a new R studio project and selecting the version control option. If you want to use the ssh option, you will need to generate a new ssh key on your farm account by running `ssh-keygen`. 
 
