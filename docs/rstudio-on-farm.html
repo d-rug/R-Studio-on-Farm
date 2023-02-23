@@ -247,6 +247,10 @@ module load rstudio-server/2022.12.0
 rstudio-launch
 </code></pre>
 <p>This will print out two things: a complicated looking command starting with <code>ssh</code>, and a Web site URL that starts with localhost. You’ll need both of these!</p>
+<p>If you get an error with this command you can try loading the older version (this was recently updated)</p>
+<pre class="slurm"><code>
+module load rstudio-server/2022.07.1
+</code></pre>
 <p><strong>Example</strong></p>
 <div class="figure">
 <img src="docs/img/rstudio-launch-output.png" alt="" />
@@ -256,8 +260,8 @@ rstudio-launch
 <div id="start-ssh-tunneling" class="section level2 hasAnchor" number="1.6">
 <h2><span class="header-section-number">1.6</span> Start ssh tunneling<a href="rstudio-on-farm.html#start-ssh-tunneling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now, in a new Terminal window (Mac OS X) or mobaxterm shell window (Windows) <strong>on your laptop</strong>, run the command it printed out for you to run - something like</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="rstudio-on-farm.html#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-2"><a href="rstudio-on-farm.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-L33243:c8-96:33243</span> rjkenny@farm.cse.ucdavis.edu</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="rstudio-on-farm.html#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="rstudio-on-farm.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-L33243:c8-96:33243</span> rjkenny@farm.cse.ucdavis.edu</span></code></pre></div>
 <p>and then go to the localhost URL (something like <code>http://localhost:39XXX</code>) in a browser.</p>
 <p>You should end up at an RStudio login page, where you can enter the username and password that were printed out when you ran <code>rserver-farm</code>.</p>
 <div class="figure">
