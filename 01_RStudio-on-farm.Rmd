@@ -27,6 +27,7 @@ Step by step - what is happening here?
 ## SSH "tunneling" what is happening?
 
 ![diagram](docs/img/upload_4c0789c727cb67cfa682ea50c4774ce8.png)
+
 * farm head node doesn’t run big compute jobs, so you can’t run RStudio there
 * farm compute nodes are “hidden” from the Internet, so you can’t connect directly to them
 * so you tell ssh to “tunnel” from your laptop through farm head node to the farm compute nodes
