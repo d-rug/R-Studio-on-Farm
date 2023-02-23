@@ -190,10 +190,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="ssh-tunneling-what-is-happening" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> SSH “tunneling” what is happening?<a href="rstudio-on-farm.html#ssh-tunneling-what-is-happening" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="docs/img/upload_4c0789c727cb67cfa682ea50c4774ce8.png" alt="diagram" />
-* farm head node doesn’t run big compute jobs, so you can’t run RStudio there
-* farm compute nodes are “hidden” from the Internet, so you can’t connect directly to them
-* so you tell ssh to “tunnel” from your laptop through farm head node to the farm compute nodes</p>
+<div class="figure">
+<img src="docs/img/upload_4c0789c727cb67cfa682ea50c4774ce8.png" alt="" />
+<p class="caption">diagram</p>
+</div>
+<ul>
+<li>farm head node doesn’t run big compute jobs, so you can’t run RStudio there</li>
+<li>farm compute nodes are “hidden” from the Internet, so you can’t connect directly to them</li>
+<li>so you tell ssh to “tunnel” from your laptop through farm head node to the farm compute nodes</li>
+</ul>
 </div>
 <div id="logging-in-to-farm" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> Logging in to Farm<a href="rstudio-on-farm.html#logging-in-to-farm" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -252,10 +257,10 @@ rstudio-launch
 <span id="cb7-2"><a href="rstudio-on-farm.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-L33243:c8-96:33243</span> rjkenny@farm.cse.ucdavis.edu</span></code></pre></div>
 <p>and then go to the localhost URL (something like <code>http://localhost:39XXX</code>) in a browser.</p>
 <p>You should end up at an RStudio login page, where you can enter the username and password that were printed out when you ran <code>rserver-farm</code>.</p>
-<div class="figure">
-<img src="docs/img/rstuio_login.png" alt="" />
-<p class="caption">rtudio login</p>
-</div>
+<p><img src="docs/img/rstuio_login.png" alt="rtudio login" />
+A couple things to get folks going:</p>
+<p>You can use the scp command in your local computer’s terminal window to copy files to the remote system - read more about that <a href="https://ngs-docs.github.io/2021-august-remote-computing/connecting-to-remote-computers-with-ssh.html#copying-files-to-and-from-your-local-computer.">here</a></p>
+<p>You can also clone a github repository using the git clone command in the terminal, or by opening a new R studio project and selecting the version control option. If you want to use the ssh option, you will need to generate a new ssh key on your farm account by running <code>ssh-keygen</code>.</p>
 
 </div>
 </div>
