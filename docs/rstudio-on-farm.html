@@ -242,14 +242,16 @@ module load spack/R/4.1.1
 
 module load rstudio-server/2022.12.0
 </code></pre>
-<p>and run the <code>rserver-lanuch</code> program</p>
+<p>and run the <code>rstudoio-lanuch</code> program</p>
 <pre class="slurm"><code>
 rstudio-launch
 </code></pre>
 <p>This will print out two things: a complicated looking command starting with <code>ssh</code>, and a Web site URL that starts with localhost. You’ll need both of these!</p>
-<p>If you get an error with this command you can try loading the older version (this was recently updated)</p>
+<p>If you get an error with this command you can try loading the older version (this was recently updated) and runnign the <code>rserver-farm</code> program.</p>
 <pre class="slurm"><code>
 module load rstudio-server/2022.07.1
+
+rserver-farm
 </code></pre>
 <p><strong>Example</strong></p>
 <div class="figure">
